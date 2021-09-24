@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E117739626FE424B00DBA7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E117739526FE424B00DBA7F8 /* AppDelegate.swift */; };
+		E117739A26FE424B00DBA7F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E117739926FE424B00DBA7F8 /* ViewController.swift */; };
+		E117739D26FE424B00DBA7F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E117739B26FE424B00DBA7F8 /* Main.storyboard */; };
+		E117739F26FE424C00DBA7F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E117739E26FE424C00DBA7F8 /* Assets.xcassets */; };
+		E11773A226FE424C00DBA7F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11773A026FE424C00DBA7F8 /* LaunchScreen.storyboard */; };
+		E11773CB26FE42FD00DBA7F8 /* libzstd.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11773B026FE42FD00DBA7F8 /* libzstd.1.tbd */; };
+		E11773D426FE432D00DBA7F8 /* GZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11773D226FE432D00DBA7F8 /* GZIP.swift */; };
+		E11773D526FE432D00DBA7F8 /* BZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11773D326FE432D00DBA7F8 /* BZIP.swift */; };
+		E11773D826FE433300DBA7F8 /* ZSTD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11773D626FE433300DBA7F8 /* ZSTD.swift */; };
+		E11773D926FE433300DBA7F8 /* XZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11773D726FE433300DBA7F8 /* XZ.swift */; };
+		E11773DD26FE43C100DBA7F8 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11773DC26FE43BD00DBA7F8 /* libbz2.tbd */; };
+		E11773DF26FE445200DBA7F8 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11773DE26FE444B00DBA7F8 /* libz.1.tbd */; };
+		E11773E226FE445F00DBA7F8 /* libzip.5.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11773E126FE445F00DBA7F8 /* libzip.5.0.tbd */; };
+		E11773E526FE446400DBA7F8 /* ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11773E426FE446400DBA7F8 /* ZIP.swift */; };
+		E11BEC3426FE4E4900E77788 /* Packages.bz2 in Resources */ = {isa = PBXBuildFile; fileRef = E11BEC3126FE4E4800E77788 /* Packages.bz2 */; };
+		E11BEC3526FE4E4900E77788 /* Packages.zst in Resources */ = {isa = PBXBuildFile; fileRef = E11BEC3226FE4E4900E77788 /* Packages.zst */; };
+		E11BEC3626FE4E4900E77788 /* Packages.xz in Resources */ = {isa = PBXBuildFile; fileRef = E11BEC3326FE4E4900E77788 /* Packages.xz */; };
+		E11BEC3826FE4E9E00E77788 /* Packages.zip in Resources */ = {isa = PBXBuildFile; fileRef = E11BEC3726FE4E9E00E77788 /* Packages.zip */; };
+		E11BEC3A26FE50D600E77788 /* liblzma.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E11BEC3926FE50D100E77788 /* liblzma.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E117739226FE424B00DBA7F8 /* SwiftDecompression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDecompression.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E117739526FE424B00DBA7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E117739926FE424B00DBA7F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E117739C26FE424B00DBA7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E117739E26FE424C00DBA7F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11773A126FE424C00DBA7F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11773A326FE424C00DBA7F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11773B026FE42FD00DBA7F8 /* libzstd.1.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libzstd.1.tbd; sourceTree = "<group>"; };
+		E11773B226FE42FD00DBA7F8 /* libzstd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libzstd.h; sourceTree = "<group>"; };
+		E11773B526FE42FD00DBA7F8 /* lzma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzma.h; sourceTree = "<group>"; };
+		E11773B726FE42FD00DBA7F8 /* liblzma.5.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = liblzma.5.tbd; sourceTree = "<group>"; };
+		E11773BA26FE42FD00DBA7F8 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		E11773BB26FE42FD00DBA7F8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		E11773BC26FE42FD00DBA7F8 /* index_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index_hash.h; sourceTree = "<group>"; };
+		E11773BD26FE42FD00DBA7F8 /* lzma12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzma12.h; sourceTree = "<group>"; };
+		E11773BE26FE42FD00DBA7F8 /* container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = container.h; sourceTree = "<group>"; };
+		E11773BF26FE42FD00DBA7F8 /* delta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delta.h; sourceTree = "<group>"; };
+		E11773C026FE42FD00DBA7F8 /* vli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vli.h; sourceTree = "<group>"; };
+		E11773C126FE42FD00DBA7F8 /* check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = check.h; sourceTree = "<group>"; };
+		E11773C226FE42FD00DBA7F8 /* bcj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bcj.h; sourceTree = "<group>"; };
+		E11773C326FE42FD00DBA7F8 /* stream_flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_flags.h; sourceTree = "<group>"; };
+		E11773C426FE42FD00DBA7F8 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		E11773C526FE42FD00DBA7F8 /* hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hardware.h; sourceTree = "<group>"; };
+		E11773C626FE42FD00DBA7F8 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		E11773C726FE42FD00DBA7F8 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		E11773D226FE432D00DBA7F8 /* GZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GZIP.swift; sourceTree = "<group>"; };
+		E11773D326FE432D00DBA7F8 /* BZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BZIP.swift; sourceTree = "<group>"; };
+		E11773D626FE433300DBA7F8 /* ZSTD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZSTD.swift; sourceTree = "<group>"; };
+		E11773D726FE433300DBA7F8 /* XZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XZ.swift; sourceTree = "<group>"; };
+		E11773DA26FE434500DBA7F8 /* SwiftDecompression-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDecompression-Header.h"; sourceTree = "<group>"; };
+		E11773DC26FE43BD00DBA7F8 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		E11773DE26FE444B00DBA7F8 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		E11773E126FE445F00DBA7F8 /* libzip.5.0.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libzip.5.0.tbd; sourceTree = "<group>"; };
+		E11773E326FE446400DBA7F8 /* libzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libzip.h; sourceTree = "<group>"; };
+		E11773E426FE446400DBA7F8 /* ZIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIP.swift; sourceTree = "<group>"; };
+		E11BEC3126FE4E4800E77788 /* Packages.bz2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Packages.bz2; sourceTree = "<group>"; };
+		E11BEC3226FE4E4900E77788 /* Packages.zst */ = {isa = PBXFileReference; lastKnownFileType = file; path = Packages.zst; sourceTree = "<group>"; };
+		E11BEC3326FE4E4900E77788 /* Packages.xz */ = {isa = PBXFileReference; lastKnownFileType = file; path = Packages.xz; sourceTree = "<group>"; };
+		E11BEC3726FE4E9E00E77788 /* Packages.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Packages.zip; sourceTree = "<group>"; };
+		E11BEC3926FE50D100E77788 /* liblzma.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblzma.tbd; path = usr/lib/liblzma.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E117738F26FE424B00DBA7F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11BEC3A26FE50D600E77788 /* liblzma.tbd in Frameworks */,
+				E11773DD26FE43C100DBA7F8 /* libbz2.tbd in Frameworks */,
+				E11773CB26FE42FD00DBA7F8 /* libzstd.1.tbd in Frameworks */,
+				E11773E226FE445F00DBA7F8 /* libzip.5.0.tbd in Frameworks */,
+				E11773DF26FE445200DBA7F8 /* libz.1.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E117738926FE424A00DBA7F8 = {
+			isa = PBXGroup;
+			children = (
+				E117739426FE424B00DBA7F8 /* SwiftDecompression */,
+				E117739326FE424B00DBA7F8 /* Products */,
+				E11773DB26FE43BD00DBA7F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E117739326FE424B00DBA7F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E117739226FE424B00DBA7F8 /* SwiftDecompression.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E117739426FE424B00DBA7F8 /* SwiftDecompression */ = {
+			isa = PBXGroup;
+			children = (
+				E11BEC3026FE4E1B00E77788 /* TestData */,
+				E11773D126FE431800DBA7F8 /* Decompression  */,
+				E11773A926FE42DB00DBA7F8 /* Deps */,
+				E117739526FE424B00DBA7F8 /* AppDelegate.swift */,
+				E117739926FE424B00DBA7F8 /* ViewController.swift */,
+				E117739B26FE424B00DBA7F8 /* Main.storyboard */,
+				E117739E26FE424C00DBA7F8 /* Assets.xcassets */,
+				E11773A026FE424C00DBA7F8 /* LaunchScreen.storyboard */,
+				E11773A326FE424C00DBA7F8 /* Info.plist */,
+				E11773DA26FE434500DBA7F8 /* SwiftDecompression-Header.h */,
+			);
+			path = SwiftDecompression;
+			sourceTree = "<group>";
+		};
+		E11773A926FE42DB00DBA7F8 /* Deps */ = {
+			isa = PBXGroup;
+			children = (
+				E11773E026FE445900DBA7F8 /* libzip */,
+				E11773B426FE42FD00DBA7F8 /* liblzma */,
+				E11773AF26FE42FD00DBA7F8 /* libzstd */,
+			);
+			path = Deps;
+			sourceTree = "<group>";
+		};
+		E11773AF26FE42FD00DBA7F8 /* libzstd */ = {
+			isa = PBXGroup;
+			children = (
+				E11773B026FE42FD00DBA7F8 /* libzstd.1.tbd */,
+				E11773B226FE42FD00DBA7F8 /* libzstd.h */,
+			);
+			path = libzstd;
+			sourceTree = "<group>";
+		};
+		E11773B426FE42FD00DBA7F8 /* liblzma */ = {
+			isa = PBXGroup;
+			children = (
+				E11773B526FE42FD00DBA7F8 /* lzma.h */,
+				E11773B726FE42FD00DBA7F8 /* liblzma.5.tbd */,
+				E11773B926FE42FD00DBA7F8 /* lzma */,
+			);
+			path = liblzma;
+			sourceTree = "<group>";
+		};
+		E11773B926FE42FD00DBA7F8 /* lzma */ = {
+			isa = PBXGroup;
+			children = (
+				E11773BA26FE42FD00DBA7F8 /* index.h */,
+				E11773BB26FE42FD00DBA7F8 /* version.h */,
+				E11773BC26FE42FD00DBA7F8 /* index_hash.h */,
+				E11773BD26FE42FD00DBA7F8 /* lzma12.h */,
+				E11773BE26FE42FD00DBA7F8 /* container.h */,
+				E11773BF26FE42FD00DBA7F8 /* delta.h */,
+				E11773C026FE42FD00DBA7F8 /* vli.h */,
+				E11773C126FE42FD00DBA7F8 /* check.h */,
+				E11773C226FE42FD00DBA7F8 /* bcj.h */,
+				E11773C326FE42FD00DBA7F8 /* stream_flags.h */,
+				E11773C426FE42FD00DBA7F8 /* block.h */,
+				E11773C526FE42FD00DBA7F8 /* hardware.h */,
+				E11773C626FE42FD00DBA7F8 /* filter.h */,
+				E11773C726FE42FD00DBA7F8 /* base.h */,
+			);
+			path = lzma;
+			sourceTree = "<group>";
+		};
+		E11773D126FE431800DBA7F8 /* Decompression  */ = {
+			isa = PBXGroup;
+			children = (
+				E11773D726FE433300DBA7F8 /* XZ.swift */,
+				E11773D626FE433300DBA7F8 /* ZSTD.swift */,
+				E11773D326FE432D00DBA7F8 /* BZIP.swift */,
+				E11773D226FE432D00DBA7F8 /* GZIP.swift */,
+				E11773E426FE446400DBA7F8 /* ZIP.swift */,
+			);
+			path = "Decompression ";
+			sourceTree = "<group>";
+		};
+		E11773DB26FE43BD00DBA7F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11BEC3926FE50D100E77788 /* liblzma.tbd */,
+				E11773DE26FE444B00DBA7F8 /* libz.1.tbd */,
+				E11773DC26FE43BD00DBA7F8 /* libbz2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11773E026FE445900DBA7F8 /* libzip */ = {
+			isa = PBXGroup;
+			children = (
+				E11773E126FE445F00DBA7F8 /* libzip.5.0.tbd */,
+				E11773E326FE446400DBA7F8 /* libzip.h */,
+			);
+			path = libzip;
+			sourceTree = "<group>";
+		};
+		E11BEC3026FE4E1B00E77788 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				E11BEC3126FE4E4800E77788 /* Packages.bz2 */,
+				E11BEC3326FE4E4900E77788 /* Packages.xz */,
+				E11BEC3226FE4E4900E77788 /* Packages.zst */,
+				E11BEC3726FE4E9E00E77788 /* Packages.zip */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E117739126FE424B00DBA7F8 /* SwiftDecompression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11773A626FE424C00DBA7F8 /* Build configuration list for PBXNativeTarget "SwiftDecompression" */;
+			buildPhases = (
+				E117738E26FE424B00DBA7F8 /* Sources */,
+				E117738F26FE424B00DBA7F8 /* Frameworks */,
+				E117739026FE424B00DBA7F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDecompression;
+			productName = SwiftDecompression;
+			productReference = E117739226FE424B00DBA7F8 /* SwiftDecompression.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E117738A26FE424A00DBA7F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E117739126FE424B00DBA7F8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = E117738D26FE424A00DBA7F8 /* Build configuration list for PBXProject "SwiftDecompression" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E117738926FE424A00DBA7F8;
+			productRefGroup = E117739326FE424B00DBA7F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E117739126FE424B00DBA7F8 /* SwiftDecompression */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E117739026FE424B00DBA7F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11773A226FE424C00DBA7F8 /* LaunchScreen.storyboard in Resources */,
+				E117739F26FE424C00DBA7F8 /* Assets.xcassets in Resources */,
+				E117739D26FE424B00DBA7F8 /* Main.storyboard in Resources */,
+				E11BEC3526FE4E4900E77788 /* Packages.zst in Resources */,
+				E11BEC3826FE4E9E00E77788 /* Packages.zip in Resources */,
+				E11BEC3626FE4E4900E77788 /* Packages.xz in Resources */,
+				E11BEC3426FE4E4900E77788 /* Packages.bz2 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E117738E26FE424B00DBA7F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E117739A26FE424B00DBA7F8 /* ViewController.swift in Sources */,
+				E11773D426FE432D00DBA7F8 /* GZIP.swift in Sources */,
+				E11773D826FE433300DBA7F8 /* ZSTD.swift in Sources */,
+				E11773D526FE432D00DBA7F8 /* BZIP.swift in Sources */,
+				E117739626FE424B00DBA7F8 /* AppDelegate.swift in Sources */,
+				E11773E526FE446400DBA7F8 /* ZIP.swift in Sources */,
+				E11773D926FE433300DBA7F8 /* XZ.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E117739B26FE424B00DBA7F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E117739C26FE424B00DBA7F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E11773A026FE424C00DBA7F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11773A126FE424C00DBA7F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11773A426FE424C00DBA7F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11773A526FE424C00DBA7F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11773A726FE424C00DBA7F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SwiftDecompression/Deps/liblzma",
+					"$(SRCROOT)/SwiftDecompression/Deps/libzip",
+					"$(SRCROOT)/SwiftDecompression/Deps/libzstd",
+				);
+				INFOPLIST_FILE = SwiftDecompression/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/libzstd",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/liblzma",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/libzip",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amywhile.SwiftDecompression;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwiftDecompression/SwiftDecompression-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11773A826FE424C00DBA7F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SwiftDecompression/Deps/liblzma",
+					"$(SRCROOT)/SwiftDecompression/Deps/libzip",
+					"$(SRCROOT)/SwiftDecompression/Deps/libzstd",
+				);
+				INFOPLIST_FILE = SwiftDecompression/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/libzstd",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/liblzma",
+					"$(PROJECT_DIR)/SwiftDecompression/Deps/libzip",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amywhile.SwiftDecompression;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwiftDecompression/SwiftDecompression-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E117738D26FE424A00DBA7F8 /* Build configuration list for PBXProject "SwiftDecompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11773A426FE424C00DBA7F8 /* Debug */,
+				E11773A526FE424C00DBA7F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11773A626FE424C00DBA7F8 /* Build configuration list for PBXNativeTarget "SwiftDecompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11773A726FE424C00DBA7F8 /* Debug */,
+				E11773A826FE424C00DBA7F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E117738A26FE424A00DBA7F8 /* Project object */;
+}

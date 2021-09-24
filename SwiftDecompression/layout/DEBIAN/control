@@ -1,0 +1,10 @@
+Package: com.amywhile.swiftdecompression
+Name: SwiftDecompression
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Test App For File Decompression in Swift
+Maintainer: Amy While <support@anamy.gay>
+Author: Amy While <support@anamy.gay>
+Section: Applications
+Depends: firmware (>= 13.0), libzstd1, libzip
+
