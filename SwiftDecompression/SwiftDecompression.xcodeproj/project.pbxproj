@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E11BEC3026FE4E1B00E77788 /* TestData */,
-				E11773D126FE431800DBA7F8 /* Decompression  */,
+				E11773D126FE431800DBA7F8 /* Decompression */,
 				E11773A926FE42DB00DBA7F8 /* Deps */,
 				E117739526FE424B00DBA7F8 /* AppDelegate.swift */,
 				E117739926FE424B00DBA7F8 /* ViewController.swift */,
@@ -171,7 +171,7 @@
 			path = lzma;
 			sourceTree = "<group>";
 		};
-		E11773D126FE431800DBA7F8 /* Decompression  */ = {
+		E11773D126FE431800DBA7F8 /* Decompression */ = {
 			isa = PBXGroup;
 			children = (
 				E11773D726FE433300DBA7F8 /* XZ.swift */,
@@ -180,7 +180,7 @@
 				E11773D226FE432D00DBA7F8 /* GZIP.swift */,
 				E11773E426FE446400DBA7F8 /* ZIP.swift */,
 			);
-			path = "Decompression ";
+			path = Decompression;
 			sourceTree = "<group>";
 		};
 		E11773DB26FE43BD00DBA7F8 /* Frameworks */ = {
