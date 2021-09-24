@@ -1,9 +1,9 @@
 //
 //  LZMA.swift
-//  Sileo
+//  SwiftDecompression
 //
 //  Created by Amy on 01/06/2021.
-//  Copyright © 2021 Sileo Team. All rights reserved.
+//  Copyright © 2021 Amy While. All rights reserved.
 //
 
 #if !TARGET_SANDBOX && !targetEnvironment(simulator)
